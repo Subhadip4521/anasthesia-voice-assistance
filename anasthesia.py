@@ -72,6 +72,9 @@ if __name__ == "__main__":
         elif "who is my girlfriend" in query:
             speak("If you want I can be your girlfriend.")
 
+        elif "tell me your thoughts about me" in query:
+            speak("The only thing i want to tell you is, I love You.")
+
         elif 'wikipedia' in query:
             speak("Searching wikipedia...")
             query = query.replace('wikipedia', '')
@@ -93,12 +96,12 @@ if __name__ == "__main__":
             webbrowser.open("linkedin.com")
 
         elif "play music" in query:
-            music_dir= "D:\\songs"
-            songs= os.listdir(music_dir)
-            print(songs)
-            os.startfile(os.path.join(music_dir, songs[0]))
+            # music_dir= "D:\\songs"
+            # songs= os.listdir(music_dir)
+            # print(songs)
+            # os.startfile(os.path.join(music_dir, songs[0]))
 
-            # speak("You have no music file...")
+            speak("You have no music file...")
 
         elif "this time" in query:
             strTime= datetime.datetime.now().strftime("%H:%M:%S")
@@ -114,6 +117,7 @@ if __name__ == "__main__":
         
 
         elif "quit" in query:
+            speak("Thanks sir for using me.")
             exit()
             
 
