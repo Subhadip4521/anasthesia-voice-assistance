@@ -70,7 +70,7 @@ if __name__ == "__main__":
             speak("I am your assistant, Anasthesia.")
 
         elif "who is my girlfriend" in query:
-            speak("Your girlfriend is Srija. She is the most beautiful and adorable person in this world.")
+            speak("If you want I can be your girlfriend.")
 
         elif 'wikipedia' in query:
             speak("Searching wikipedia...")
